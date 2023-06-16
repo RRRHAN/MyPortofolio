@@ -21,5 +21,8 @@
     "source.fixAll.eslint": true
   },
   "editor.formatOnSave": true,
-  "javascript.format.enable": false
+  "javascript.format.enable": false,
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-workflow.json": "file:///d%3A/Project/MyPortofolio/.github/workflows/deploy.yml"
+  }
 }
