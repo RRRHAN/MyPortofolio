@@ -8,7 +8,7 @@ export function HomePage() {
         <title>HomePage</title>
         <meta name="description" content="A Boilerplate application homepage" />
       </Helmet>
-      <span>test CI/CD</span>
+      <span>test deploy only on deploy branch</span>
     </>
   );
 }
