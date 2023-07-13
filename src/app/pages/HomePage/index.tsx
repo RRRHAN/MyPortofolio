@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Hero } from './section/hero';
 import { Helmet } from 'react-helmet-async';
 
 export function HomePage() {
@@ -8,7 +9,7 @@ export function HomePage() {
         <title>HomePage</title>
         <meta name="description" content="A Boilerplate application homepage" />
       </Helmet>
-      <span>test deploy only on deploy branch</span>
+      <Hero />
     </>
   );
 }
