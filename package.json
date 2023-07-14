@@ -73,7 +73,6 @@
     "build:css": "postcss src/styles/tailwind.css -o src/styles/index.css",
     "watch:css": "postcss src/styles/tailwind.css -o src/styles/index.css --watch",
     "start": "concurrently --kill-others \"yarn run watch:css\" \"react-scripts start\"",
-    "watch:css": "postcss src/styles/tailwind.css -o src/styles/index.css",
     "build": "yarn run build:css && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
