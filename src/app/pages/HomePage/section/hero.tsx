@@ -13,10 +13,10 @@ export function Hero() {
                   Raihan Firmansyah
                 </span>
               </h1>
-              <h2 className="font-medium text-slate-500 text-lg mb-5 mt-1 lg:text-2xl">
+              <h2 className="font-medium text-secondary text-lg mb-5 mt-1 lg:text-2xl">
                 BackEnd Engineer | Machine Learning Enthusiast
               </h2>
-              <p className="font-medium text-slate-400 mb-10 leading-relaxed">
+              <p className="font-medium text-secondary mb-10 leading-relaxed">
                 God never promise life would be easy but he promise after
                 hardship will be ease
               </p>

@@ -3,3 +3,7 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.hover-white:hover img {
+  filter: brightness(0) invert(1);
+}
