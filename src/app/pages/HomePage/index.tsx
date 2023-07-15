@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Hero } from './section/hero';
 import { About } from './section/about';
+import { Certification } from './section/certification';
 import { Helmet } from 'react-helmet-async';
 
 export function HomePage() {
@@ -12,6 +13,7 @@ export function HomePage() {
       </Helmet>
       <Hero />
       <About />
+      <Certification />
     </>
   );
 }
