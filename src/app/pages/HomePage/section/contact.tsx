@@ -24,8 +24,6 @@ export function Contact() {
 
   const submitForm = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log('url ', scriptURL);
-    console.log('env ', process.env);
     axios
       .post(scriptURL, new FormData(form))
       .then(response => {
