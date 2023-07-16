@@ -1,7 +1,9 @@
 name: Vercel Preview Deployment
 env:
+  NODE_ENV: preview
   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+  REACT_APP_CONTACT_FORM_SCRIPT_URL: ${{ secrets.CONTACT_FORM_SCRIPT_URL }}
 on:
   push:
     branches-ignore:

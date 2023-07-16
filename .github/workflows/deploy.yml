@@ -1,7 +1,9 @@
 name: Vercel Production Deployment
 env:
+  NODE_ENV: production
   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+  REACT_APP_CONTACT_FORM_SCRIPT_URL: ${{ secrets.CONTACT_FORM_SCRIPT_URL }}
 on:
   push:
     branches:
