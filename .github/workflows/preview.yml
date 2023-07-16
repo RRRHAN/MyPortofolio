@@ -3,7 +3,7 @@ env:
   NODE_ENV: preview
   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-  REACT_APP_CONTACT_FORM_SCRIPT_URL: ${{ vars.CONTACT_FORM_SCRIPT_URL }}
+  REACT_APP_CONTACT_FORM_SCRIPT_URL: https://script.google.com/macros/s/AKfycbyyQ4PCEzBE_ypqlLjrvFHcj8ODc9hKsM8so1Zd4YbWYO27qIJ4yqrDoZR_BhXggjpf/exec
 on:
   push:
     branches-ignore:
