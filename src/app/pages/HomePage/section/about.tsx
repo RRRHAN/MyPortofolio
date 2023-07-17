@@ -74,6 +74,8 @@ export function About() {
               </div>
             </div>
           </div>
+          {/* TODO: use better solution to offset scroll certification */}
+          <div id="certification"></div>
         </div>
       </section>
     </>

@@ -53,7 +53,7 @@ export function Certification() {
 
   return (
     <>
-      <section id="certification" className="pb-32  bg-primary">
+      <section id="" className="pb-10 bg-primary">
         <div className="p-0">
           <div className="flex flex-wrap">
             <div className="w-full">
