@@ -1,27 +1,5 @@
 import * as React from 'react';
-
-const socialmedias = [
-  {
-    name: 'instagram',
-    logoUrl: '/icons/instagram.svg',
-    url: 'https://www.instagram.com/raihan.firm',
-  },
-  {
-    name: 'linkedin',
-    logoUrl: '/icons/linkedin.svg',
-    url: 'https://www.linkedin.com/in/rrhan/',
-  },
-  {
-    name: 'github',
-    logoUrl: '/icons/github.svg',
-    url: 'https://github.com/RRRHAN',
-  },
-  {
-    name: 'mail',
-    logoUrl: '/icons/mail.svg',
-    url: 'mailto:raihan.firmansy@gmail.com',
-  },
-];
+import { socialmedias } from 'config';
 
 export function About() {
   return (
