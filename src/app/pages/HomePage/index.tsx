@@ -4,6 +4,7 @@ import { Hero } from './section/hero';
 import { About } from './section/about';
 import { Certification } from './section/certification';
 import { Contact } from './section/contact';
+import { Footer } from './../../components/footer';
 import { Helmet } from 'react-helmet-async';
 
 export function HomePage() {
@@ -18,6 +19,7 @@ export function HomePage() {
       <About />
       <Certification />
       <Contact />
+      <Footer />
     </>
   );
 }
