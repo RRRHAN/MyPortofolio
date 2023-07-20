@@ -53,11 +53,11 @@ export function Certification() {
 
   return (
     <>
-      <section id="" className="pb-10 bg-primary">
+      <section id="" className="pb-10 bg-primary dark:bg-slate-300">
         <div className="p-0">
           <div className="flex flex-wrap">
             <div className="w-full">
-              <h4 className="font-bold uppercase text-white text-xl my-5 md:my-10 text-center md:text-2xl lg:text-4xl">
+              <h4 className="font-bold uppercase text-white text-xl my-5 md:my-10 text-center md:text-2xl lg:text-4xl dark:text-dark">
                 Certification
               </h4>
               <ReactSwipe className="carousel" ref={el => (reactSwipeEl = el)}>
