@@ -4,7 +4,7 @@ import Modal from 'react-modal';
 import styled from 'styled-components/macro';
 import { Animate } from 'app/components/animate';
 
-const scriptURL = String(process.env.REACT_APP_CONTACT_FORM_SCRIPT_URL);
+const scriptURL = String(process.env.REACT_APP_SCRIPT_URL);
 
 const customStyles = {
   content: {
@@ -19,14 +19,15 @@ const customStyles = {
 };
 
 export function Contact() {
-  let form;
+  let form: HTMLFormElement;
   const [modalIsOpen, setModalIsOpen] = React.useState(false);
   const [formSentSuccess, setFormSentSuccess] = React.useState(false);
 
   const submitForm = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    let formData = new FormData(form);
     axios
-      .post(scriptURL, new FormData(form))
+      .post(scriptURL, formData)
       .then(response => {
         if (response.data.result === 'success') {
           showModal(true);
@@ -69,7 +70,16 @@ export function Contact() {
             </Animate>
           </div>
 
-          <form onSubmit={e => submitForm(e)} ref={el => (form = el)}>
+          <form
+            onSubmit={e => submitForm(e)}
+            ref={el => (form = el as HTMLFormElement)}
+          >
+            <input
+              type="hidden"
+              value={process.env.NODE_ENV}
+              name="environment"
+            />
+            <input type="hidden" value="contact" name="type" />
             <div className="w-full lg:w-2/3 lg:mx-auto">
               <div className="w-full px-4 mb-8">
                 <Animate from="left">
